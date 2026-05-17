@@ -1,0 +1,101 @@
+/* Custom Styles for QuickBite */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --red-main: #D70F64;
+    --red-dark: #d62828;
+    --red-light: #ffeff0;
+    --text-dark: #1d3557;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-dark);
+}
+
+
+
+.bg-color{
+    background-color: #D70F64;
+}
+
+/* Custom Colors */
+.text-red { color: var(--red-main) !important; }
+.bg-red { background-color: var(--red-main) !important; }
+.bg-red-light { background-color: var(--red-light) !important; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark);
+}
+
+/* Buttons */
+.btn-red {
+    background-color: var(--red-main);
+    color: white;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-red:hover {
+    background-color: var(--red-dark);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+}
+
+/* Navigation */
+.navbar-nav .nav-link {
+    color: #457b9d;
+    margin: 0 12px;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: var(--red-main) !important;
+}
+
+/* Cards */
+.category-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    border: 2px solid transparent !important;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--red-light) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08)!important;
+}
+
+.aspect-square {
+    aspect-ratio: 1 / 1;
+}
+
+.food-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08)!important;
+}
+
+/* Footer Links */
+.footer-links a {
+    color: #a8dadc;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f1faee;
+    padding-left: 8px;
+}
+
+/* Forms */
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
+    border-color: var(--red-main);
+    background-color: #fff !important;
+}
